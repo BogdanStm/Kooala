@@ -1,0 +1,448 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    font-size: 1.6rem;
+}
+
+.nav {
+    background: url("../img/nav\ background.jpg") no-repeat center;
+    background-size: cover;
+    background-position: 50%;
+    width: 100%;
+    height: 50rem;
+    background-attachment: fixed;
+}
+
+.nav__container {
+    display: flex;
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    max-width: 900px;
+    margin:0 auto;
+    z-index: 999;
+    align-items: center;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.nav__homepage {
+    margin-top: 7rem;
+}
+
+.nav__container-leftList {
+    width: 100%;
+}
+
+.leftList {
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.leftList-item{
+    margin: 0 2rem;
+    transition: all 0.5s ease-in-out;
+    padding-bottom: .5rem;
+    cursor: pointer;
+
+}
+
+.nav__container-rightList{
+    width: 100%;
+}
+
+.rightList {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.rightList-item {
+    margin: 0 2rem;
+    transition: all 0.5s ease-in-out;
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+.rightList-item:hover, .leftList-item:hover {
+    border-bottom: 1px solid #FFF;
+}
+
+.signUp {
+    border: 0.1rem solid #FFF;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.signUp:hover {
+    background-color: #FFF;
+    color: #000;
+}
+
+.nav__homepage-logo{
+    display: flex;
+}
+
+.logo{
+    width: 10rem;
+    margin: 0 auto;
+    padding: 5rem 0 0 0;
+}
+
+.nav__searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav__searchBar-input {
+    padding: .9rem;
+    border: none;
+    width: 18%;
+}
+
+.nav__searchBar button {
+    padding: .9rem 1.4rem;
+    background-color: #3D59D6;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button i {
+    color: #fff;
+}
+
+.nav__searchBar label {
+    background-color: #fff;
+    color: #666666;
+    font-weight: 700;
+    padding: .75rem .8rem;
+    border-left: 1px solid #666666;
+}
+
+.nav__searchBar label:nth-last-child(5) {
+    border-left: none;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav__links-container {
+    display: flex;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.link {
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+input:focus {
+    border: 1px solid #1670BE;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
+.link span {
+    margin: 0 .5rem;
+    transition: all 1s ease-in-out;
+
+}
+
+.link span:hover {
+    border-bottom: 1px solid #FFF;
+}
+
+.link i {
+    font-size: 1.4rem;
+}
+
+.sectionHotels {
+    height: 75rem;
+    background-color: #FCFCFD;
+}
+
+.sectionHotels__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.sectionHotels__container-left {
+    display: flex;
+    flex-direction: column;
+    color: #434554;
+    background-color: #FCFCFD;
+    margin-right: 5rem;
+    width: 100%;
+}
+
+.sectionHotels-title {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.sectionHotels-desc {
+    padding-bottom: 2rem;
+}
+
+.sectionHotels-button {
+    width: 20rem;
+    text-align: center;
+    padding: 1.5rem 0;
+    border-radius: .5rem;
+    color: #FCFCFD;
+    background-color: #3D59D6;
+}
+
+
+
+.sectionHotels__container-right {
+    margin-left: 3rem;
+}
+
+.right__box {
+    width: 250px;
+    background-color: #FCFCFD;
+    border-top-right-radius: 2rem;
+    padding-bottom: 1rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 50px 0 rgba(0,0,0, .3);
+}
+
+.right__box-title {
+    font-weight: bold;
+    padding: 2rem 0 3rem 0;
+}
+
+.right__box-container {
+    padding: 0 1rem;
+}
+
+.right__box-image img {
+    width: 250px;
+    height: 180px;
+    background-size: cover;
+    border-top-right-radius: 2rem;
+}
+
+.right__box-stars {
+    padding-bottom: 1rem;
+}
+
+.right__box-hearth {
+    background-color: #FCECEE;
+    color: #ED4452;
+    width: 7rem;
+    text-align: center;
+    font-size: 14px;
+    padding: .5rem 0;
+    border-radius: 20rem;
+}
+
+.fas.fa-star {
+ color: #F9B403;
+}
+
+
+.sectionRestaurants {
+    background-color: #DFEFFD;
+    
+}
+
+.sectionRestaurants__container-bot {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+.sectionRestaurats__containerBot {
+    flex-direction: column;
+    width: 200px;
+}
+
+.sectionRestaurants__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 10rem;
+    padding: 5rem 4rem;
+    max-width: 80%;
+}
+
+.sectionRestaurants__containerTop {
+    display: flex;
+    justify-content: space-between;
+    color: #434554;
+}
+
+.sectionRestaurants-title {
+    width: 30%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.sectionRestaurants-desc {
+    width: 70%;
+    justify-content: flex-end;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.bot__box {
+    border-top-right-radius: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 50px 100px 0 rgba(0,0,0, .4);
+    background-color: #fff;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+
+    transition: 0.5s;
+}
+
+.bot__box-image img {   
+    width: 30rem;
+    height: 25rem;
+    background-size: cover;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+
+}
+
+.bot__box-title {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.bot__box-stars {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bot__box-hearth {
+    margin-left: 14rem;
+    background-color: #FCECEE;
+    color: #ED4452;
+    width: 7rem;
+    text-align: center;
+    font-size: 14px;
+    padding: .5rem 0;
+    border-radius: 20rem;
+}
+
+.last-section {
+    margin-top: 25px;
+    background: url("../img/nav\ background.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+.all-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+.logo-section {
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+ 
+}
+
+.img__logo-section {
+    width: 200px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.privacy-policy {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.products-section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.about_us-section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.resources-section {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.get_in_touch-section {
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.first-word {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fb {
+    font-size: 50px;
+}
+
+.ig {
+    font-size: 50px;
+}
+
+.second-words {
+    margin-bottom: 10px;
+}

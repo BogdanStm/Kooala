@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/login2.css">
+    <link rel="stylesheet" href="./src/css/main.css">
+    <title>Log In</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container-logo">
+                <img src="./src/img/koala.png" alt="logo" class="nav-logo">
+                <div class="nav-text"> <a href="./home.html">Kooala</a> </div>
+            </div>
+            <div class="nav__container-links">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#">Hotel</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__container-account">
+                <a href="./login2.html" class="login-btn">Logare</a>
+            </div>
+        </div>
+
+        <div class="nav__toggle">
+        <div class="nav__toggle-lines">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+        </div>
+    </div>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card" >
+                <div class="card-front">
+                    <h2>Logare</h2>
+                    <form action="">
+                        <input type="email" class="input-box" placeholder="Adresa Email" required >
+                        <input type="password" class="input-box" placeholder="Parola" required >
+                        <button type="submit" class="submit-btn" >Acceseaza</button>
+                        <input type="checkbox"><span>Tine-ma minte</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openRegister()">Sunt nou aici</button>
+                    <a href="">Am uitat parola</a>
+                </div>
+                <div class="card-back">
+                    <h2>Inregistrare</h2>
+                    <form action="">
+                        <input type="text" class="input-box" placeholder="Nume" required >
+                        <input type="email" class="input-box" placeholder="Adresa Email" required >
+                        <input type="password" class="input-box" placeholder="Parola" required >
+                        <button type="submit" class="submit-btn" >Acceseaza</button>
+                        <input type="checkbox"><span>Tine-ma minte</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">Am deja un cont</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top-column">
+                <div class="footer-logo">
+                    <img src="./src/img/koala.png" alt="kooala" class="logo">
+                </div>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="./home.html">Acasă</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Hotel</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="">Consumatori</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Despre</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Securitate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="">Politică de confidențialitate</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Termeni de utilizare</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Politica Cookie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-container">
+                <div class="footer__bottom-column">
+                    © Kooala
+                </div>
+                <div class="footer__bottom-column">
+                    <div class="email">
+                        <a href="mailto:contact@kooala.com">contact@kooala.com</a>
+                    </div>
+                    <div class="media">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        var card = document.getElementById("card");
+
+        function openRegister(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+
+        function openLogin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+
+    </script>
+</body>
+</html>

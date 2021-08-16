@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <!-- NAV -->         
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container-logo">
+                <img src="./src/img/koala.png" alt="logo" class="nav-logo">
+                <div class="nav-text"><a href="./home.php">Kooala</a></div>
+            </div>
+            <div class="nav__container-links">
+                <ul class="list">
+                
+                    <li class="list-item active">
+                        <a href="#">Hotel</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Restaurant</a>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="nav__container-account">
+                <a href="./login2.html" class="login-btn">Logare</a>
+            </div>
+        </div>
+
+        <div class="nav__toggle">
+        <div class="nav__toggle-lines">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+        </div>
+    </div>
+    </nav>
+    <!-- SECTION -->
+    <section class="section">
+        <div class="section__container">
+            <!-- FILTERS -->
+            <div class="section__container-filters">
+                <div class="filters__container filter">
+                    <select class="filter-button">
+                        <option value="price">Sector</option>
+                        <option value="test">1</option>
+                        <option value="test">2</option>
+                        <option value="test">3</option>
+                        <option value="test">4</option>
+                        <option value="test">5</option>
+                    </select>
+                    <select class="filter-button">
+                        <option value="stars">Stele</option>
+                        <option value="test">1</option>
+                        <option value="test">2</option>
+                        <option value="test">3</option>
+                        <option value="test">4</option>
+                        <option value="test">5</option>
+                    </select>
+                    <select class="filter-button">
+                        <option value="facilities">Facilitati</option>
+                        <option value="test">Wi-fi</option>
+                        <option value="test">test</option>
+                        <option value="test">test</option>
+                    </select>
+                    <select class="filter-button">
+                        <option value="more">Camere</option>
+                        <option value="test">1</option>
+                        <option value="test">2</option>
+                        <option value="test">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="section__container-hero hero">
+                <div class="hero__container hero">
+                    <div class="hero-img">
+                        <img src="./src/img/theARTISTrestaurant.jpg" alt="hotel" class="box-img">
+                    </div>
+                 <div class="hero__box">
+                        <div class="hero__box-content content">
+                            <div class="content-column">
+                                <div class="box-name">44th Floor Luxury Apartment</div>
+                                <div class="box-info">Hotel location</div>
+                            </div>
+                            <div class="content-column">
+                                <div class="box-price">125 lei</div>
+                                <div class="box-info">Pe noapte</div>
+                            </div>
+                        </div>
+                        <div class="hero__box-info info">
+                            <div class="info-column">
+                                <div class="box-info">2 bedrooms</div>
+                            </div>
+                         <div class="info-column">
+                                <div class="box-button">
+                                    <a href="./product-page.html">Acceseaza</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__container hero">
+                    <div class="hero-img">
+                        <img src="./src/img/section/restaurant1" alt="hotel" class="box-img">
+                    </div>
+                 <div class="hero__box">
+                        <div class="hero__box-content content">
+                            <div class="content-column">
+                                <div class="box-name">44th Floor Luxury Apartment</div>
+                                <div class="box-info">Hotel location</div>
+                            </div>
+                            <div class="content-column">
+                                <div class="box-price">$125</div>
+                                <div class="box-info">pe noapte</div>
+                            </div>
+                        </div>
+                        <div class="hero__box-info info">
+                            <div class="info-column">
+                                <div class="box-info">2 bedrooms</div>
+                            </div>
+                         <div class="info-column">
+                                <div class="box-button">
+                                    <a href="">Acceseaza</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BANNER ADS -->
+                <div class="hero__ads">
+                    <div class="ads"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section__map" id="map">
+            &nbsp;
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top-column">
+                <div class="footer-logo">
+                    <img src="./src/img/koala.png" alt="kooala" class="logo">
+                </div>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="">Acasă</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Hotel</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="">Consumatori</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Despre</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Securitate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="">Politică de confidențialitate</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Termeni de utilizare</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Politica Cookie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-container">
+                <div class="footer__bottom-column">
+                    © Kooala
+                </div>
+                <div class="footer__bottom-column">
+                    <div class="email">
+                        <a href="mailto:contact@kooala.com">contact@kooala.com</a>
+                    </div>
+                    <div class="media">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

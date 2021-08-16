@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../img/burger.png");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.from-box {
+    width: 38rem;
+    height: 48rem;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 0.5rem;
+}
+
+.button-box {
+    width: 20rem;
+    margin: 3.5rem auto;
+    position: relative;
+    box-shadow: 0 0 1rem 0.9rem #ff61241f;
+    border-radius: 3rem;
+}
+
+.toggle-btn {
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 11rem;
+    height: 100%;
+    background: linear-gradient(to right, #3D59D6, #54B1F3);
+    border-radius: 3rem;
+    transition: .5s;
+}
+
+.social-icons {
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 3rem;
+    margin: 0 1.2rem;
+    box-shadow: 0 0 2rem 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.input-group {
+    top: 18rem;
+    position: absolute;
+    width: 28rem;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0.5rem 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #3D59D6, #54B1F3);
+    border: 0;
+    outline: none;
+    border-radius: 3rem;
+}
+
+.chech-box {
+    margin: 3rem 1rem 3rem 0;
+}
+
+.span{
+    color: #777;
+    font-size: 1.2rem;
+    bottom: 6.8rem;
+    position:absolute;
+}
+
+.hide {
+    display: none;
+}

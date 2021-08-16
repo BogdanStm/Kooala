@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Produs</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav__container">
+            <div class="nav__container-logo">
+                <img src="../../public/img/koala.png" alt="logo" class="nav-logo">
+                <div class="nav-text">Kooala</div>
+            </div>
+            <div class="nav__container-links">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="#">Hotel</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__container-account">
+                <a href="#" class="login-btn">Logare</a>
+            </div>
+        </div>
+
+        <div class="nav__toggle">
+        <div class="nav__toggle-lines">
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+        </div>
+    </div>
+    </nav>
+    <!-- Product info -->
+    <div class="product">
+        <div class="product__container">
+            <div class="product__container-img">
+                <img src="./src/img/section/restaurant1" alt="hotel" class="product-img">
+                <div class="img__gallery">
+                    <img src="./src/img/section/restaurant0.1" alt="hotel" class="product-img">
+                    <img src="./src/img/norSky.jpg" alt="hotel" class="product-img">
+                </div>
+            </div>
+            <div class="product__container-data data">
+                <div class="data__about">
+                    <div class="data__about-review">
+                        <div class="review-note">5.0</div>
+                        <div class="review-condition review">Perfect</div>
+                        <div class="review-hotel">Hotel</div>
+                        <div class="review-stars review">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="data__about-name">Maxone Ascent Hotel Luxury Kota Malang</div>
+                    <div class="data__about-address">Hotel address</div>
+                </div>
+                <div class="data__info">
+                    <div class="data__info-desc">
+                        <div class="desc-name">Description</div>
+                        <div class="desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quisquam cumque aperiam dolores natus illum saepe voluptatum, maxime autem? Similique vel nihil provident rem odit doloremque officiis necessitatibus nulla commodi!</div>
+                    </div>
+                    <div class="data__info-desc disable">
+                        <div class="desc-name">Features</div>
+                        <div class="desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae voluptatibus quidem, voluptas ducimus, officiis veniam unde officia eum corrupti accusamus porro adipisci? Quas, illum nostrum dolores vel earum error architecto.</div>
+                    </div>
+                    <div class="data__info-desc disable">
+                        <div class="desc-name">Virtual</div>
+                        <div class="desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque soluta ducimus ratione distinctio neque? Quis modi, voluptatum cum fugit dicta ratione voluptas animi nemo distinctio pariatur. Dolores id dolore inventore?</div>
+                    </div>
+                    <div class="data__info-desc disable">
+                        <div class="desc-name">Price & Task history</div>
+                        <div class="desc-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta numquam, obcaecati nesciunt mollitia corporis animi quibusdam totam nisi iure quis quam placeat voluptatem at distinctio repellat dolorum, natus, impedit est!</div>
+                    </div>
+                </div>
+                <div class="data__features">
+                    <div class="data__features-name">
+                        Hotels Features
+                    </div>
+                    <div class="features">
+                        <div class="features-icons">
+                            <div class="icon"><i class="fas fa-wifi"></i></div>
+                            <div class="icon-name">Wi-FI</div>
+                        </div>
+                        <div class="features-icons">
+                            <div class="icon"><i class="fas fa-bed"></i></div>
+                            <div class="icon-name">Kings Bed</div>
+                        </div>
+                        <div class="features-icons">
+                            <div class="icon"><i class="fas fa-bacon"></i></div>
+                            <div class="icon-name">Breakfast</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="data__map" id="map">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top-column">
+                <div class="footer-logo">
+                    <img src="./src/img/koala.png" alt="kooala" class="logo">
+                </div>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="./home.html">Acasă</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Hotel</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="">Consumatori</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Despre</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Securitate</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__top-column">
+                <ul class="list">
+                    <li class="link">
+                        <a href="">Politică de confidențialitate</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Termeni de utilizare</a>
+                    </li>
+                    <li class="link">
+                        <a href="">Politica Cookie</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-container">
+                <div class="footer__bottom-column">
+                    © Kooala
+                </div>
+                <div class="footer__bottom-column">
+                    <div class="email">
+                        <a href="mailto:contact@kooala.com">contact@kooala.com</a>
+                    </div>
+                    <div class="media">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
